@@ -1,0 +1,276 @@
+/*
+Theme Name: A-Hum
+Theme URI: tom-davie.es/blog
+Description: The theme for my personal blog
+Author: Tom Davies
+Author URI: tom-davi.es
+Template: thematic
+Version: 3.0
+*/
+
+/* Using @import, we can borrow style sheets from the Parent Theme */
+
+/* Reset the browser defaults */
+@import url('../thematic/library/styles/reset.css');
+
+/* Import the Template */
+@import url('../thematic/library/styles/default.css');
+
+/* Apply default typography */
+@import url('../thematic/library/styles/typography.css');
+
+/* Add WordPress image styles */
+@import url('../thematic/library/styles/images.css');
+
+/* Add a basic layout */
+@import url('../thematic/library/layouts/3c-fixed.css');
+
+/* Start with some default styles */
+@import url('../thematic/library/styles/18px.css');
+
+/* Google Font API */
+@import url(http://fonts.googleapis.com/css?family=Metrophobic|Yanone+Kaffeesatz:400,700&v2);
+
+/* Overall Changes */
+
+p, li {
+	font-family: "Metrophobic";
+	font-weight: 400;
+	padding-top: 10px;
+	font-size: 16px;
+	line-height: 17px;
+}
+
+#wrapper {
+	background: url(images/bg4.png);
+}
+
+a {
+	color:#AC0017;
+}
+
+/* Title Style */
+#blog-title a {
+	font-family: 'Yanone Kaffeesatz';
+	font-size: 72pt;
+	font-weight: 400;
+	/*line-height: 60pt;*/
+	padding-bottom: 0px;
+	text-decoration: none;
+	text-shadow: 2px 2px 2px #AC0017;
+}
+
+#blog-title a:active, #blog-title a:hover {
+	color:#AC0017;
+	text-shadow: 2px 2px 2px #000000;
+}
+
+#blog-description {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 28px;
+	font-style: italic;
+	color: #AC0017;
+	margin-top: 22px;
+}
+
+.safari #blog-description {
+	padding-top: -5px;
+}
+
+.aside a:active, .aside a:hover {
+	color:#AC0017;
+}
+
+/* Sidebar Style */
+#content .aside {
+	padding-top: 0px;
+}
+
+.aside ul ul {
+	margin-bottom: 0px;
+	margin-left: 0px;
+} 
+#primary {
+	display: none;
+  	border-color:#CCCCCC;
+  	border-style:solid;
+  	border-width:1px;
+  	margin-bottom:22px;
+  	padding:0 0 0 18px;
+  	width: 200px;
+  	/*margin-left: -950px;*/
+  	margin-left: 10%;
+}
+
+#secondary {
+	display: none;
+  	border-color:#CCCCCC;
+  	border-style:solid;
+  	border-width:1px;
+  	margin-bottom:22px;
+  	padding:0 0 0 18px;
+  	width: 200px;
+  	/*margin-left: -210px;*/
+  	margin-left: 90%;
+}
+.main-aside ul {
+	padding-left:0px;
+	padding-right:0px;
+}
+
+#content {
+	margin-left: 15%;
+	margin-right: 15%;
+	width: 650px;
+}
+
+/* Menu Style */
+/*.sf-menu a {
+	padding-bottom:9px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:7px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}*/
+
+.sf-menu li {
+	background-color:rgba(255, 255, 255, 0.1);
+	font-style: italic;
+}
+
+.menu {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 20px;
+	vertical-align: centre;
+}
+
+#menu-categories {
+	colour: none;
+}
+#menu-categories a:active, #menu-categories a:hover {
+	color: #FFFFFF;
+	background-color: #AC0017;
+}
+
+.page-title {
+	display: none;
+	/*font-family:'Yanone Kaffeesatz', sans-serif;
+	font-size: 22px;
+	padding-bottom: 30px;
+	color: #AC0017*/
+}
+
+.paged #nav-above{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	padding: 0;
+}
+
+.navigation{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	padding-bottom: 10px;
+}
+
+/* Post Style */
+img{
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+}
+
+#main img{
+	box-shadow:0px 0px 5px 3px #AC0017;
+		-moz-box-shadow:0px 0px 5px 3px #AC0017;
+		-webkit-box-shadow:0px 0px 5px 3px #AC0017;
+}	
+
+.aligncenter, img.aligncenter{
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 640px;
+}
+
+iframe{
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	box-shadow:0px 0px 5px 3px #AC0017;
+	-moz-box-shadow:0px 0px 5px 3px #AC0017;
+	-webkit-box-shadow:0px 0px 5px 3px #AC0017;
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 640px;
+}
+.entry-title {
+	font-family: 'Yanone Kaffeesatz';
+	font-size: 36pt;
+	line-height: 36pt;
+	text-align: center;
+	text-shadow: 2px 2px 2px #AC0017;
+	padding-bottom: 3px;
+}
+
+.entry-title a:active, .entry-title a:hover {
+	color:#AC0017;
+	text-shadow: 2px 2px 2px #000000;
+}
+
+.entry-meta, .entry-utility, .entry-meta a, .entry-meta a:active, .entry-utility a, .entry-utility a:active {
+	font-family: 'Yanone Kaffeesatz';
+	font-size: 16px;
+	font-style: normal;
+	text-align: center;
+	color: #AC0017;
+	border-top-color: #CCCCCC;
+	border-top-width: 1px;
+	border-top-style: solid;
+}
+
+.entry-meta .n, .entry-meta abbr, .entry-utility a {
+	font-size: 16px;
+	font-style: italic;
+}
+
+.entry-utility {
+	margin-bottom: 5px;
+}
+
+/* Post Format Styles */
+
+.format-image {
+	text-align: center;
+}
+
+.format-image .entry-title {
+	display: none;
+}
+
+.format-quote .entry-content blockquote{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 48pt;
+	font-style: normal;
+	line-height: 48pt;
+	text-transform: uppercase;
+	text-align: center;
+	color: #AC0017;
+	text-shadow: 2px 2px 2px #000000;
+	margin: 0;	
+}
+.format-quote .entry-title {
+	display: none;
+}
+
+.format-video {
+	
+}
+
+/* Widget Style */
+.xoxo {
+	padding-top: 5px;
+	margin-bottom: 5px;
+}
