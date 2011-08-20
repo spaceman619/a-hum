@@ -59,4 +59,50 @@ Version: 4.0
 	width : @contentwidth - 10px;
 }
 
+.border {
+	border-color: #CCCCCC;
+	border-style:  solid;
+	border-width:  1px;
+}
+
 /* Overall Changes */
+
+p, li {
+	font-family: @bodyfont;
+	font-weight: 400;
+	padding-top: 10px;
+	font-size: 16px;
+	line-height: 17px;
+}
+
+#wrapper {
+	background:  url(images/bg4.png);
+}
+
+a {
+	color: @colour1;
+}
+
+/*Title Style*/
+
+#blog-title a	{
+	color: @colour1;
+	font-family: @mainfont;
+	font-size: 72pt;
+	font-weight: 400;
+	padding-bottom: 0px;
+	text-decoration: none;
+	text-shadow: 2px, 2px, 2px, @colour1;
+	
+	&:active, &:hover {
+	color: @color2;
+	text-shadow: 2px, 2px, 2px, @colour2;
+	}
+}
+
+
+
+
+
+
+
