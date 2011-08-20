@@ -32,8 +32,8 @@ Version: 4.0
 @import url(http://fonts.googleapis.com/css?family=Metrophobic|Yanone+Kaffeesatz:400,700&v2);
 
 /*{LESS} Variables*/
-@mainfont: "Yanone Kaffeesatz";
-@bodyfont: "Metrophobic";
+@mainfont: "Yanone Kaffeesatz", sans serif;
+@bodyfont: "Metrophobic", serif;
 @colour1: #AC0017;
 @colour2: #000000;
 @contentwidth: 650px
@@ -100,7 +100,36 @@ a {
 	}
 }
 
+blog-description {
+	font-family: @mainfont;
+	font-size:  28px;
+	font-style:  italic;
+	colour: @colour1;
+	margin-top: 22px;
+}
 
+/*
+.safari #blog-description {
+	padding-top: -5px;
+}
+*/
+
+/*Sidebar Styles*/
+#content {
+	margin-right: 15%;
+	margin-left: 15%;
+	width: @contentwidth;
+	.aside {	
+		padding-top: 0px;
+		colour: @colour1;}
+	.aside ul ul {
+		margin-bottom: 0px;
+		margin-left: 0px; }
+}
+
+#primary, #secondary {
+	display: none;
+}
 
 
 
