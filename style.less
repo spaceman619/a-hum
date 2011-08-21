@@ -8,35 +8,12 @@ Template: thematic
 Version: 4.0
 */
 
-/* Using @import, we can borrow style sheets from the Parent Theme */
-
-/* Reset the browser defaults */
-@import url('../thematic/library/styles/reset.css');
-
-/* Import the Template */
-@import url('../thematic/library/styles/default.css');
-
-/* Apply default typography */
-@import url('../thematic/library/styles/typography.css');
-
-/* Add WordPress image styles */
-@import url('../thematic/library/styles/images.css');
-
-/* Add a basic layout */
-@import url('../thematic/library/layouts/3c-fixed.css');
-
-/* Start with some default styles */
-@import url('../thematic/library/styles/18px.css');
-
-/* Google Font API */
-@import url(http://fonts.googleapis.com/css?family=Metrophobic|Yanone+Kaffeesatz:400,700&v2);
-
 /*{LESS} Variables*/
 @mainfont: "Yanone Kaffeesatz", sans serif;
 @bodyfont: "Metrophobic", serif;
 @colour1: #AC0017;
 @colour2: #000000;
-@contentwidth: 650px
+@contentwidth: 650px;
 
 /*{LESS} Mixins*/
 .corners {
@@ -95,7 +72,7 @@ a {
 	text-shadow: 2px, 2px, 2px, @colour1;
 	
 	&:active, &:hover {
-	color: @color2;
+	color: @colour2;
 	text-shadow: 2px, 2px, 2px, @colour2;
 	}
 }
