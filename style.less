@@ -109,6 +109,86 @@ blog-description {
 }
 
 
+.main-aside ul {
+	padding-left: 0px;
+	padding-right: 0px;
+}
 
+/*Menu Style*/
 
+.sf-menu li {
+	background-color: rgba(255, 255, 255, 0.1);
+	font-style:  italic;
+}
 
+.menu {
+	font-family: @mainfont;
+	font-size: 20px;
+}
+
+#menu-categories {
+	color: #FFFFFF;
+	a:active, a:hover {
+		color: #FFFFFF;
+		background-color: @colour1;
+}
+
+.page-title {
+	display: none;
+}
+
+.paged #nav-above {
+	font-family: @mainfont;
+	padding: 0;
+}
+
+.navigation {
+	font-family: @mainfont;
+	padding-bottom: 10px;
+}
+
+/*Post Style*/
+img{
+	.corners;
+}
+
+#main img{
+	.dropshadow;
+}
+
+.aligncenter, img.aligncenter{
+	.central;
+}
+
+iframe {
+	.corners;
+	.dropshadow;
+	.central;
+}
+
+.entry-title {
+	font-family: @mainfont;
+	font-size: 36pt;
+	line-height: 36pt;
+	text-align: center;
+	text-shadow: 2px 2px 2px @colour1;
+	padding-bottom: 3px;
+	azimuth:active, a:hover {
+		color: @colour1;
+		text-shadow: 2px 2px 2px @colour2;}
+}
+
+.entry-meta, entry-utility {
+	margin-bottom: 5px;
+	a, a:active {
+		font-family: @mainfont;
+		font-size: 16px;
+		font-style: normal;
+		text-align: center;
+		color: @colour1;
+		.border}
+	.n, abbr {
+		font-size: 16px;
+		font-style: italic;
+	}
+}
